@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700;1,800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+    margin:0px;
+    width:100vw;
+    overflow-x: hidden;
+    
+}
+/* header */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    border-bottom:2px solid black;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #fdfdfd;
+    z-index:1000;
+
+
+}
+.title{
+    margin:0px;
+    font-size:24px;
+    font-weight:700;
+    cursor:pointer;
+    /* padding:1rem; */
+
+
+}
+.title:hover{
+    color:#ff4d00;
+    transition:all 0.3s;
+}
+.name{
+    border-right:2px solid black;
+    padding:1rem;
+  
+
+}
+.resume-div{
+    border-left:2px solid black;
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:1rem;
+    /* font-weight:600; */
+
+
+}
+/* main-component styling */
+.main-component{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.left-component{
+    width:60%;
+    border-right:2px solid #000;
+    height:100vh;
+ 
+   
+}
+.right-component{
+    width:40%;
+  
+     min-height:100px; 
+    height:100vh;
+    background-image: url("./IMG_3461\ 1\ \(1\).svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:3px solid red;
+
+}
+.chip-flex{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:1rem;
+    /* border:2px solid red; */
+    
+}
+.chips{
+    font-size:15px;
+    font-weight:500;
+    padding:0.35rem 1rem;
+    text-align: center;
+    border:2px solid black;
+    min-width:100px;
+    border-radius:50px;
+    cursor:pointer;
+    
+}
+.chips:hover {
+    background-color:black;
+    color:white;
+    border-color:#fdfaf3;
+    transition: all 0.3s;
+
+}
+.main-text{
+    font-size:24px;
+    font-weight:700;
+}
+.text-para .list{
+    font-size: 24px;
+}
+.my-info{
+    border-bottom:2px solid black;
+    padding:1rem;
+    padding-top: 5rem;
+}
+.education{
+    border-bottom:2px solid black;
+    padding:1.5rem;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color:#ff4d00;
+    text-decoration:underline;
+    transition:all 0.1s;
+
+}
+.social-component{
+    border-bottom: 2px solid black;
+    padding:1.5rem;
+    display:flex;
+    justify-content: space-between;
+}
+.social-flex{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:1.5rem;
+}
+.social-flex-1:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+    transform:all 0.3s;
+
+}
+@media only screen and(max-width:1100px)
+{
+    .right-component .left-component{
+        width:50%;
+    }
+
+}
+@media only screen and(max-width:950px)
+{
+    .main-component{
+        flex-direction: column-reverse;
+
+    }
+    .right-component .left-component{
+        width:100%;
+    }
+    .chips{
+        font-size:10px;
+        font-weight:400;
+        padding:0.35rem 1rem;
+        text-align: center;
+        border:2px solid black;
+        min-width:none !important;
+        border-radius:50px;
+        cursor:pointer;
+    } 
+    .my-info{
+        margin-top:0rem;
+
+
+    } 
+    .name,.resume-div{  
+        border: none;
+    }
+    resume-div h1{
+        dispaly:none;
+    }
+    .para,.list{
+        font-size:20px;
+    }
+    .my-info,.social-component,.education{
+        padding:1rem;
+
+    }
+
+}
